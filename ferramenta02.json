@@ -1,164 +1,160 @@
 {
-  "plano_pessoa_fisica": {
-    "sem_obstetricia_vital_200": {
-      "nome": "Vital 200 - Sem Obstetrícia",
-      "tipo": "Pessoa Física",
-      "coparticipacao": "Completa",
-      "abrangencia": "Municipal",
-      "carencia_zero": [
-        "Urgência",
-        "Emergência",
-        "Consultas",
-        "Exames básicos",
-        "Exames especiais"
-      ],
-      "promocao": {
-        "desconto": "20%",
-        "parcelas": 6
-      },
-      "valores": [
-        { "faixa": "00 a 18 anos", "valor": 177.19 },
-        { "faixa": "19 a 23 anos", "valor": 194.56 },
-        { "faixa": "24 a 28 anos", "valor": 217.46 },
-        { "faixa": "29 a 33 anos", "valor": 247.41 },
-        { "faixa": "34 a 38 anos", "valor": 297.15 },
-        { "faixa": "39 a 43 anos", "valor": 361.46 },
-        { "faixa": "44 a 48 anos", "valor": 450.25 },
-        { "faixa": "49 a 53 anos", "valor": 582.45 },
-        { "faixa": "54 a 58 anos", "valor": 770.59 },
-        { "faixa": "59 anos ou mais", "valor": 1032.19 }
-      ]
-    },
-
-    "com_obstetricia_vital_200": {
-      "nome": "Vital 200 - Com Obstetrícia",
-      "tipo": "Pessoa Física",
-      "coparticipacao": "Completa",
-      "acomodacao": "Apartamento",
-      "promoção": {
-        "carencia_zero": true,
-        "desconto": "20%",
-        "parcelas": 6,
-        "ativacao_em": "48 horas"
-      },
-      "coberturas": [
-        "Urgência e emergência",
-        "Consultas",
-        "Exames simples",
-        "Exames complexos",
-        "Cirurgias",
-        "Internações",
-        "Procedimentos terapêuticos",
-        "Parto",
-        "UTI",
-        "Assistência neonatal"
-      ],
-      "abrangencia": [
-        "Teresina",
-        "Timon",
-        "Altos",
-        "União",
-        "Pedreiras/MA"
-      ],
-      "carencias": {
-        "24h": [
-          "Urgência e Emergência",
+  "tool": "ferramenta02",
+  "description": "Planos Pessoa Física (Vital 200 com/sem obstetrícia e Superior PF) com coberturas, abrangência, carências e valores por faixa etária.",
+  "data": {
+    "plano_pessoa_fisica": {
+      "sem_obstetricia_vital_200": {
+        "nome": "Vital 200 - Sem Obstetrícia",
+        "tipo": "Pessoa Física",
+        "coparticipacao": "Completa",
+        "abrangencia": "Municipal",
+        "carencia_zero": [
+          "Urgência",
+          "Emergência",
           "Consultas",
-          "Exames simples"
+          "Exames básicos",
+          "Exames especiais"
         ],
-        "30_dias": "Exames especiais",
-        "180_dias": ["Psicologia", "Terapias", "Fonoaudiologia"],
-        "10_meses": "Parto e assistência neonatal",
-        "24_meses": "Doenças e lesões preexistentes"
+        "promocao": {
+          "desconto": "20%",
+          "parcelas": 6
+        },
+        "valores": [
+          { "faixa": "0 a 18 anos", "valor": 177.19 },
+          { "faixa": "19 a 23 anos", "valor": 194.56 },
+          { "faixa": "24 a 28 anos", "valor": 217.46 },
+          { "faixa": "29 a 33 anos", "valor": 247.41 },
+          { "faixa": "34 a 38 anos", "valor": 297.15 },
+          { "faixa": "39 a 43 anos", "valor": 361.46 },
+          { "faixa": "44 a 48 anos", "valor": 450.25 },
+          { "faixa": "49 a 53 anos", "valor": 582.45 },
+          { "faixa": "54 a 58 anos", "valor": 770.59 },
+          { "faixa": "59 anos ou mais", "valor": 1032.19 }
+        ]
       },
-      "valores": [
-        { "faixa": "0 a 18 anos", "valor": 187.61 },
-        { "faixa": "19 a 23 anos", "valor": 206.02 },
-        { "faixa": "24 a 28 anos", "valor": 230.32 },
-        { "faixa": "29 a 33 anos", "valor": 262.06 },
-        { "faixa": "34 a 38 anos", "valor": 314.81 },
-        { "faixa": "39 a 43 anos", "valor": 382.98 },
-        { "faixa": "44 a 48 anos", "valor": 477.09 },
-        { "faixa": "49 a 53 anos", "valor": 617.26 },
-        { "faixa": "54 a 58 anos", "valor": 816.72 },
-        { "faixa": "59 anos ou mais", "valor": 1094.01 }
-      ]
-    },
 
-    "plano_superior_pf": {
-      "nome": "Plano Superior - Pessoa Física",
-      "tipo": "Pessoa Física",
-      "coparticipacao": "Completa",
-      "abrangencia": [
-        "Picos",
-        "Piripiri",
-        "Parnaíba",
-        "Bom Jesus",
-        "Campo Maior",
-        "Altos",
-        "Floriano",
-        "Caxias",
-        "Coelho Neto",
-        "Codó",
-        "Presidente Dutra"
-      ],
-      "opcoes_acomodacao": [
-        "Enfermaria completa",
-        "Apartamento completo"
-      ],
-      "promocao": { "desconto": "20%", "parcelas": 6 },
+      "com_obstetricia_vital_200": {
+        "nome": "Vital 200 - Com Obstetrícia",
+        "tipo": "Pessoa Física",
+        "coparticipacao": "Completa",
+        "acomodacao": "Apartamento",
+        "promocao": {
+          "carencia_zero": true,
+          "desconto": "20%",
+          "parcelas": 6,
+          "ativacao_em": "48 horas"
+        },
+        "coberturas": [
+          "Urgência e emergência",
+          "Consultas",
+          "Exames simples",
+          "Exames complexos",
+          "Cirurgias",
+          "Internações",
+          "Procedimentos terapêuticos",
+          "Parto",
+          "UTI",
+          "Assistência neonatal"
+        ],
+        "abrangencia": [
+          "Teresina",
+          "Timon",
+          "Altos",
+          "União",
+          "Pedreiras/MA"
+        ],
+        "carencias": {
+          "24h": ["Urgência e Emergência", "Consultas", "Exames simples"],
+          "30_dias": "Exames especiais",
+          "180_dias": ["Psicologia", "Terapias", "Fonoaudiologia"],
+          "10_meses": "Parto e assistência neonatal",
+          "24_meses": "Doenças e lesões preexistentes"
+        },
+        "valores": [
+          { "faixa": "0 a 18 anos", "valor": 187.61 },
+          { "faixa": "19 a 23 anos", "valor": 206.02 },
+          { "faixa": "24 a 28 anos", "valor": 230.32 },
+          { "faixa": "29 a 33 anos", "valor": 262.06 },
+          { "faixa": "34 a 38 anos", "valor": 314.81 },
+          { "faixa": "39 a 43 anos", "valor": 382.98 },
+          { "faixa": "44 a 48 anos", "valor": 477.09 },
+          { "faixa": "49 a 53 anos", "valor": 617.26 },
+          { "faixa": "54 a 58 anos", "valor": 816.72 },
+          { "faixa": "59 anos ou mais", "valor": 1094.01 }
+        ]
+      },
 
-      "faixas_etarias": [
-        {
-          "faixa": "0 a 18 anos",
-          "enfermaria": { "valor": 269.16, "com_desconto": 215.33 },
-          "apartamento": { "valor": 333.78, "com_desconto": 267.02 }
-        },
-        {
-          "faixa": "19 a 23 anos",
-          "enfermaria": { "valor": 295.73, "com_desconto": 236.58 },
-          "apartamento": { "valor": 366.81, "com_desconto": 293.45 }
-        },
-        {
-          "faixa": "24 a 28 anos",
-          "enfermaria": { "valor": 330.76, "com_desconto": 264.61 },
-          "apartamento": { "valor": 410.35, "com_desconto": 328.28 }
-        },
-        {
-          "faixa": "29 a 33 anos",
-          "enfermaria": { "valor": 376.58, "com_desconto": 301.26 },
-          "apartamento": { "valor": 467.32, "com_desconto": 373.86 }
-        },
-        {
-          "faixa": "34 a 38 anos",
-          "enfermaria": { "valor": 452.67, "com_desconto": 362.14 },
-          "apartamento": { "valor": 561.90, "com_desconto": 449.52 }
-        },
-        {
-          "faixa": "39 a 43 anos",
-          "enfermaria": { "valor": 551.05, "com_desconto": 440.84 },
-          "apartamento": { "valor": 684.21, "com_desconto": 547.37 }
-        },
-        {
-          "faixa": "44 a 48 anos",
-          "enfermaria": { "valor": 686.87, "com_desconto": 549.50 },
-          "apartamento": { "valor": 853.06, "com_desconto": 682.45 }
-        },
-        {
-          "faixa": "49 a 53 anos",
-          "enfermaria": { "valor": 889.10, "com_desconto": 711.28 },
-          "apartamento": { "valor": 1104.49, "com_desconto": 883.59 }
-        },
-        {
-          "faixa": "54 a 58 anos",
-          "enfermaria": { "valor": 1176.91, "com_desconto": 941.53 },
-          "apartamento": { "valor": 1462.28, "com_desconto": 1169.82 }
-        },
-        {
-          "faixa": "59 anos ou mais",
-          "enfermaria": { "valor": 1577.08, "com_desconto": 1261.66 }
-        }
-      ]
+      "plano_superior_pf": {
+        "nome": "Plano Superior - Pessoa Física",
+        "tipo": "Pessoa Física",
+        "coparticipacao": "Completa",
+        "abrangencia": [
+          "Picos",
+          "Piripiri",
+          "Parnaíba",
+          "Bom Jesus",
+          "Campo Maior",
+          "Altos",
+          "Floriano",
+          "Caxias",
+          "Coelho Neto",
+          "Codó",
+          "Presidente Dutra"
+        ],
+        "opcoes_acomodacao": ["Enfermaria completa", "Apartamento completo"],
+        "promocao": { "desconto": "20%", "parcelas": 6 },
+        "faixas_etarias": [
+          {
+            "faixa": "0 a 18 anos",
+            "enfermaria": { "valor": 269.16, "com_desconto": 215.33 },
+            "apartamento": { "valor": 333.78, "com_desconto": 267.02 }
+          },
+          {
+            "faixa": "19 a 23 anos",
+            "enfermaria": { "valor": 295.73, "com_desconto": 236.58 },
+            "apartamento": { "valor": 366.81, "com_desconto": 293.45 }
+          },
+          {
+            "faixa": "24 a 28 anos",
+            "enfermaria": { "valor": 330.76, "com_desconto": 264.61 },
+            "apartamento": { "valor": 410.35, "com_desconto": 328.28 }
+          },
+          {
+            "faixa": "29 a 33 anos",
+            "enfermaria": { "valor": 376.58, "com_desconto": 301.26 },
+            "apartamento": { "valor": 467.32, "com_desconto": 373.86 }
+          },
+          {
+            "faixa": "34 a 38 anos",
+            "enfermaria": { "valor": 452.67, "com_desconto": 362.14 },
+            "apartamento": { "valor": 561.90, "com_desconto": 449.52 }
+          },
+          {
+            "faixa": "39 a 43 anos",
+            "enfermaria": { "valor": 551.05, "com_desconto": 440.84 },
+            "apartamento": { "valor": 684.21, "com_desconto": 547.37 }
+          },
+          {
+            "faixa": "44 a 48 anos",
+            "enfermaria": { "valor": 686.87, "com_desconto": 549.50 },
+            "apartamento": { "valor": 853.06, "com_desconto": 682.45 }
+          },
+          {
+            "faixa": "49 a 53 anos",
+            "enfermaria": { "valor": 889.10, "com_desconto": 711.28 },
+            "apartamento": { "valor": 1104.49, "com_desconto": 883.59 }
+          },
+          {
+            "faixa": "54 a 58 anos",
+            "enfermaria": { "valor": 1176.91, "com_desconto": 941.53 },
+            "apartamento": { "valor": 1462.28, "com_desconto": 1169.82 }
+          },
+          {
+            "faixa": "59 anos ou mais",
+            "enfermaria": { "valor": 1577.08, "com_desconto": 1261.66 }
+          }
+        ]
+      }
     }
   }
 }
