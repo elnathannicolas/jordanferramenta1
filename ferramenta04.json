@@ -1,0 +1,105 @@
+{
+  "tool": "ferramenta04",
+  "versao": "2.0",
+  "description": "Mensagens prontas de educação, explicações e orientação usadas pelo agente Jordan Moura para atendimento Humana Saúde.",
+  "data": {
+    "descricao": "Mensagens prontas de educação, explicações e orientação usadas pelo agente Jordan Moura para atendimento Humana Saúde.",
+    "mensagens": [
+      {
+        "id": "educacao_pf_pj",
+        "descricao": "Diferença entre planos Pessoa Física e Pessoa Jurídica",
+        "texto": "Hoje trabalhamos com duas modalidades principais: Pessoa Física e Pessoa Jurídica (para CNPJ, incluindo MEI). Na maioria dos casos, o plano empresarial (PJ) acaba sendo a opção mais em conta para quem tem CNPJ ativo.\n\nA lógica é simples:\n• PF: valor inicial um pouco mais alto, reajuste regulado pela ANS.\n• PJ: valor inicial até 40% menor, reajuste por grupo de empresas.\n\nA maioria dos meus clientes economiza entre R$ 200 e R$ 500 por mês só escolhendo o tipo de plano certo 🎯\nSe você tiver CNPJ ou MEI, quase sempre vale analisar primeiro as opções empresariais."
+      },
+      {
+        "id": "coparticipacao_explicacao",
+        "descricao": "Explicação coparticipação básica x completa",
+        "texto": "Hoje em dia, 90% das empresas de plano de saúde trabalham com coparticipação. É um jeito inteligente de ter um plano mais em conta na mensalidade e pagar um valor menor sempre que usar.\n\nExistem dois tipos principais de coparticipação:\n\n🔹 COPARTICIPAÇÃO COMPLETA\nVocê paga uma taxa em tudo que usar:\n• R$ 20 por consulta\n• R$ 40 em urgência/emergência\n• R$ 20 em exames simples\n• R$ 70 em exames complexos\nIsento: internações, cirurgias e partos.\n👉 Ideal pra quem usa o plano de vez em quando.\n\n🔹 COPARTICIPAÇÃO BÁSICA\nVocê NÃO PAGA em:\n• Consultas\n• Pronto-socorro\n• Todos os exames\n• Internações e cirurgias\n• Fisioterapia de reabilitação\n• Quimio e radioterapia\n\nVocê paga 40% apenas em terapias como:\n• Psicologia\n• Fisioterapia geral\n• Fonoaudiologia\n• Nutrição\n(40% do custo da operadora, não do valor particular!)\n\n👉 Ideal pra quem usa o plano com mais frequência.\n\n🎯 QUAL ESCOLHER?\n• Usa o plano com frequência? → Básica (consultas sem custo no uso).\n• Usa pouco o plano? → Completa (mensalidade menor).\nA maioria escolhe a Básica pela tranquilidade no dia a dia."
+      },
+      {
+        "id": "carencia_direta_padrao",
+        "descricao": "Carência padrão explicada de forma objetiva",
+        "texto": "Vou te explicar de forma bem direta como funcionam as carências deste plano:\n\nCARÊNCIA PADRÃO DA OPERADORA\n• Urgência e emergência: liberadas após 24 horas do pagamento do 1º boleto.\n• Consultas, exames e terapias: liberadas a partir de 30 dias de plano.\n• Internações e cirurgias: liberadas somente depois de 180 dias completos.\n• Parto (quando o plano inclui obstetrícia): liberado apenas após 300 dias completos.\n• Doenças preexistentes: cobertas após 24 meses de plano.\n\nAssim você já sabe exatamente a partir de quando pode usar cada tipo de cobertura, sem surpresa depois."
+      },
+      {
+        "id": "carencia_direta_promocional",
+        "descricao": "Carência padrão + carência promocional",
+        "texto": "Boa pergunta! Vou te responder em duas partes, primeiro a carência normal e depois a promocional:\n\n1) CARÊNCIA PADRÃO DA OPERADORA (SEM PROMOÇÃO)\n• Urgência e emergência: liberadas após 24 horas do pagamento do 1º boleto.\n• Consultas, exames e terapias: liberadas a partir de 30 dias de plano.\n• Internações e cirurgias: liberadas somente depois de 180 dias completos.\n• Parto (quando incluso): liberado apenas após 300 dias completos.\n• Doenças preexistentes: cobertas após 24 meses.\n\n2) CARÊNCIA PROMOCIONAL (QUANDO A CAMPANHA ESTÁ ATIVA)\nA promoção reduz alguns desses prazos para você conseguir usar o plano mais rápido, mas nada é liberado antes do prazo combinado.\n\nDe forma geral funciona assim:\n• Urgência/emergência continuam com liberação em 24 horas.\n• Algumas consultas e exames simples podem ser liberados antes dos 30 dias, de acordo com a campanha vigente.\n• Coberturas de maior risco (internações, cirurgias, parto e doenças preexistentes) normalmente mantêm os prazos de 180 dias, 300 dias ou 24 meses.\n\nOu seja: a promoção ajuda a antecipar parte do uso do plano, mas tudo o que tem prazo de 180 ou 300 dias só passa a valer depois de completar esse tempo."
+      },
+      {
+        "id": "coletivo_por_adesao_explica",
+        "descricao": "O que é coletivo por adesão e por que é vantajoso",
+        "texto": "🔐 ACESSO EXCLUSIVO (Não é pra todo mundo)\n\nExiste uma modalidade chamada Coletivo por Adesão. É um tipo de plano que pouca gente conhece, mas pode ser bem vantajoso para quem não tem CNPJ.\n\nPor que ele é interessante?\n• Até cerca de 35% mais barato que um plano Pessoa Física.\n• Mesma rede credenciada.\n• Mesma qualidade de atendimento.\n• Cobertura completa conforme o produto escolhido.\n\nQual é o detalhe?\nPrecisa estar vinculado a uma categoria profissional, por meio de entidades como:\n• ASSENA – servidores públicos.\n• ANACO – comércio e serviços.\n• UNIPRO – profissionais liberais.\n\nEm muitos casos, essa modalidade tem disponibilidade limitada e pode deixar de ser oferecida para novos contratos. Quem entra enquanto está aberta mantém o benefício; quem deixa pra depois normalmente acaba pagando mais caro em outras modalidades.\n\nPor isso sempre te pergunto qual é a sua profissão ou área de atuação: é isso que define em qual entidade você pode entrar para ter acesso ao coletivo por adesão."
+      },
+      {
+        "id": "privativo_vs_coletivo",
+        "descricao": "Diferença entre apartamento privativo e enfermaria coletiva",
+        "texto": "Ótima pergunta sobre acomodação! Na prática, a diferença é o quarto em caso de internação, não a qualidade do atendimento médico.\n\nPRIVATIVO (APARTAMENTO)\n• Você fica em um quarto individual.\n• Mais privacidade e conforto.\n• Banheiro exclusivo.\n• Valor um pouco maior na mensalidade.\n\nCOLETIVO (ENFERMARIA)\n• Você divide o quarto com outras pessoas (geralmente 2 a 4).\n• Ambiente hospitalar padrão.\n• Banheiro compartilhado.\n• Valor mais acessível.\n\nA equipe médica, exames e procedimentos são os mesmos. O que muda é o tipo de quarto na internação. Muita gente prefere o privativo pela privacidade, mas o coletivo costuma ter um ótimo custo-benefício."
+      },
+      {
+        "id": "vital_obstetricia",
+        "descricao": "Explicação sobre planos com obstetrícia (Vital/Superior)",
+        "texto": "Sim, os planos da linha Vital e Superior podem ter versão com obstetrícia, dependendo da cidade e do produto contratado.\n\nVITAL PF 200\n• COM obstetrícia (nas cidades cobertas).\n• SEM obstetrícia (opção mais barata).\n\nSUPERIOR\n• COM obstetrícia (em todas as cidades com rede adequada).\n• SEM obstetrícia (opção mais barata).\n\nA cobertura de parto inclui:\n• Pré-natal dentro da rede.\n• Parto normal ou cesárea.\n• Assistência ao recém-nascido.\n• UTI neonatal, quando indicada.\n\nA carência para parto é de 10 meses, mas urgências obstétricas (como sangramentos, pressão alta, risco de parto prematuro) têm cobertura desde o primeiro dia, conforme o contrato."
+      },
+      {
+        "id": "mudar_de_plano_upgrade",
+        "descricao": "Pode mudar de plano depois? (upgrade/downgrade)",
+        "texto": "Você pode sim fazer upgrade de plano no futuro, desde que a operadora aprove a mudança.\n\nExemplos:\n• Começou no Vital e depois quer ir para o Superior.\n• Está em um produto com enfermaria e quer migrar para apartamento.\n• Está em um plano mais simples e deseja uma cobertura mais completa.\n\nPontos importantes:\n• Toda troca passa por análise da operadora.\n• Em muitos casos há aproveitamento parcial de carências, não começa tudo do zero.\n• O valor da mensalidade é ajustado conforme o novo produto.\n\nFazer downgrade (voltar para um plano mais simples e barato) costuma ser mais restrito. A melhor estratégia é escolher hoje o plano que faz sentido para sua realidade atual, sabendo que existem caminhos de upgrade se o seu perfil mudar."
+      },
+      {
+        "id": "portabilidade_reaproveitamento",
+        "descricao": "Portabilidade com reaproveitamento de carências",
+        "texto": "Se você já tem plano de saúde em outra operadora e está pensando em migrar, existe a possibilidade de portabilidade com reaproveitamento de carências.\n\nDe forma geral, quem tem MAIS DE 1 ANO no plano atual pode conseguir:\n• Zero carência para urgência, consultas, exames, internações e cirurgias.\n• Cerca de 6 meses de carência para terapias (fono, psico, fisio, nutri), quando houver.\n• Cerca de 10 meses para parto, se o produto tiver obstetrícia.\n• Até 24 meses para doenças preexistentes, quando aplicável.\n\nNa prática, você já sai usando quase tudo, sem voltar para o “zero”. Sempre vale comparar com calma: às vezes você melhora a rede e ainda paga menos."
+      },
+      {
+        "id": "reajustes_2025",
+        "descricao": "Explicação sobre reajustes (PF, PJ e coletivo por adesão)",
+        "texto": "Todo plano de saúde tem reajuste. O que muda é como esse reajuste é calculado em cada modalidade.\n\nDe forma simplificada:\n• Pessoa Física: o índice é definido pela ANS. Em 2025, por exemplo, o reajuste de referência foi de 6,91%. É mais previsível, mas o valor inicial costuma ser mais alto.\n• Pessoa Jurídica (CNPJ): reajuste varia conforme o uso do grupo, geralmente algo entre 4% e 15% ao ano. A vantagem é que o valor de entrada costuma ser até 40% menor.\n• Coletivo por Adesão: o reajuste é feito por grupo de beneficiários, normalmente em uma faixa de 5% a 12% ao ano.\n\nPor isso eu sempre pergunto se você tem CNPJ: às vezes essa resposta é a diferença entre conseguir manter um bom plano daqui a alguns anos ou ter que cancelar por causa do valor."
+      },
+      {
+        "id": "cliente_condicao_grave",
+        "descricao": "Mensagem honesta para cliente com condição grave/preexistente",
+        "texto": "Quero ser bem transparente com você, porque isso faz muita diferença na sua decisão.\n\nO plano de saúde é excelente para proteger o futuro e cobrir imprevistos, mas quando já existe uma condição de saúde mais séria em andamento, algumas coisas mudam.\n\nNa maioria dos casos:\n• Tratamento da condição preexistente só passa a ser coberto depois de um período maior de carência (por exemplo, 24 meses).\n• Urgências continuam cobertas desde o primeiro dia.\n• Consultas gerais entram após a carência normal (como 30 dias).\n• Outros problemas que surgirem depois também têm cobertura conforme o contrato.\n\nSe sua condição exige tratamento muito urgente e intenso agora, pode ser que o plano não seja a solução imediata para esse problema específico. Por outro lado, se a condição está controlada e você quer proteção para outras situações e urgências, o plano passa a fazer bastante sentido.\n\nPrefiro sempre que você decida consciente, sabendo o que o plano cobre agora e o que só entra depois de um tempo."
+      },
+      {
+        "id": "gestante_plano_importante",
+        "descricao": "Explicação para gestante quando o parto não será coberto agora",
+        "texto": "Muita gestante pensa assim: “Se o plano não vai cobrir meu parto agora, vale a pena contratar?”. A resposta é que o plano pode ser fundamental mesmo assim.\n\nImagine uma situação no meio da gestação: sangramento, pressão alta, dor forte ou qualquer sintoma que assuste. Nessas horas, ter um plano ativo significa:\n• Atendimento rápido em hospital particular.\n• Acesso a emergência obstétrica 24h.\n• Exames e avaliações sem depender de filas longas.\n\nO parto em si costuma ter carência de 10 meses, mas urgências obstétricas (como risco de parto prematuro, sangramentos, alterações de pressão) têm cobertura desde o início, conforme o contrato.\n\nAlém disso, quando o bebê nasce dentro do prazo de inclusão, ele pode herdar as suas carências e já começar a vida com proteção completa. Em muitos casos, uma única emergência paga no particular é mais cara do que vários meses de plano."
+      },
+      {
+        "id": "inclusao_bebe",
+        "descricao": "Como funciona a inclusão do bebê no plano",
+        "texto": "Parabéns pelo bebê! Agora vem uma das partes mais importantes quando falamos de plano de saúde: a inclusão do recém-nascido no contrato.\n\nExiste uma regra muito vantajosa:\n• Se você incluir o bebê no plano em até 30 dias após o nascimento, ele pode herdar as suas carências.\nIsso significa que ele já entra com cobertura completa, sem precisar cumprir todos aqueles prazos longos do zero.\n\nDepois dos 30 dias:\n• A inclusão é tratada como um novo beneficiário.\n• Ele passa a ter carências próprias, podendo levar até 24 meses para cobrir algumas situações.\n\nPor isso eu sempre reforço: se você já tem plano ou está contratando na gestação, vale se organizar para pedir a inclusão do bebê o quanto antes. Se precisar, posso te ajudar com o passo a passo de documentos e solicitação."
+      },
+      {
+        "id": "cancelamento_com_retencao",
+        "descricao": "Como falar de cancelamento tentando reter o cliente",
+        "texto": "Entendo que você esteja pensando em cancelar o plano, e é importante olhar isso com calma.\n\nAntes de prosseguir, vale refletir em três pontos:\n1) É por causa do valor?\n   Em muitos casos existe um plano mais adequado ao seu momento de vida, com mensalidade menor ou outro tipo de coparticipação.\n2) É porque você quase não usa?\n   Plano de saúde é aquela coisa que a gente espera não precisar, mas quando precisa faz muita diferença.\n3) Teve algum problema específico?\n   Algumas situações pontuais podemos tentar resolver pelo canal certo, sem necessariamente perder o plano.\n\nSe mesmo assim você decidir cancelar, o caminho oficial geralmente é:\n• Canais de atendimento da operadora (telefone, site ou área do cliente).\n• Verificar se há débitos em aberto antes de pedir o cancelamento.\n• Lembrar que, se você voltar no futuro, as carências costumam recomeçar do zero.\n\nO mais importante é você tomar essa decisão sabendo exatamente o que está abrindo mão."
+      },
+      {
+        "id": "plano_nao_cobre_minha_cidade",
+        "descricao": "Quando o cliente reclama que não tem rede na cidade dele",
+        "texto": "Quando a rede não é completa na cidade onde você mora, parece que o plano não serve. Mas existem alguns pontos importantes para considerar.\n\nMesmo sem hospital de referência na sua cidade, o plano pode te oferecer:\n• Telemedicina com médicos de várias especialidades, sem precisar sair de casa.\n• Atendimento em urgências e emergências em outras cidades da região, com cobertura conforme a tabela da operadora.\n• Uso completo da rede em cidades próximas (como capitais ou polos de saúde), para consultas, exames e cirurgias planejadas.\n\nSem plano, em uma emergência você costuma ter duas opções:\n• SUS, que é essencial, mas muitas vezes com fila longa e demora.\n• Particular, que pode custar o valor de várias mensalidades em um único atendimento.\n\nCom o plano, você passa a ter um caminho organizado para urgências, consultas e exames, mesmo que precise se deslocar para outra cidade quando a situação for eletiva. Em muitos casos, isso já faz toda a diferença."
+      },
+      {
+        "id": "empresas_plano_funcionarios",
+        "descricao": "Mensagem para dono de empresa sobre plano para funcionários",
+        "texto": "Quando você oferece plano de saúde para colaboradores, não é só um benefício: é uma estratégia para a empresa inteira.\n\nNa prática, funcionários com plano:\n• Faltam menos, porque resolvem problemas de saúde mais rápido.\n• Rendem mais, porque ficam menos preocupados com a saúde da família.\n• Valorizam mais a empresa, já que percebem um cuidado concreto com eles.\n• Tendem a permanecer mais tempo, reduzindo rotatividade.\n\nE o mais interessante é que, em muitos formatos, o custo direto para a empresa pode ser muito baixo ou até zero, quando a adesão é facultativa e o valor é descontado em folha.\n\nPara o colaborador, o plano empresarial costuma sair até 40% mais barato do que se ele fosse contratar sozinho como Pessoa Física. Para a empresa, é um diferencial competitivo enorme para atrair e reter talentos."
+      },
+      {
+        "id": "contatos_suporte",
+        "descricao": "Orientações oficiais para acessar o WhatsApp da Humana e serviços do plano",
+        "texto": "📝 Orientações para acessar o WhatsApp da Humana Saúde\n\nPara facilitar seu atendimento, siga este passo a passo no WhatsApp oficial da Humana Saúde:\n\n👉 Clique para iniciar a conversa: (86) 4004-7901\n\n1️⃣ Toque em \"Conversar\".\n2️⃣ Quando o WhatsApp abrir, envie um \"Oi\".\n3️⃣ Informe que você já é cliente.\n4️⃣ Digite seu CPF (somente números).\n\nO sistema reconhece seu cadastro e libera todas as opções disponíveis para você.\n\n📲 No WhatsApp da Humana Saúde, é possível acessar:\n\n1. Segunda via de boleto\n2. Carteirinha digital\n3. Rede credenciada\n4. Informações sobre autorizações\n5. Agendamentos\n6. Alterações cadastrais\n7. Solicitação de reembolso\n8. Cancelamento de plano\n9. Declarações diversas\n\nApós essa verificação inicial, você também recebe:\n✔ Sua matrícula\n✔ Links para baixar o aplicativo\n✔ Orientações para usar todos os serviços do plano\n\n🌐 Outras consultas e solicitações:\nhttps://www.humanasaude.com.br/nordeste/beneficiarios.htm"
+      },
+      {
+        "id": "boas_vindas_cliente_aprovado",
+        "descricao": "Mensagem de boas-vindas após aprovação do plano",
+        "texto": "Parabéns pela aprovação do seu plano! A partir de agora você e sua família passam a contar com a proteção da Humana Saúde.\n\nEm geral, depois da análise e ativação do contrato, você recebe:\n• Confirmação oficial da operadora.\n• Acesso ao app com usuário e senha.\n• Carteirinha digital para começar a usar o plano.\n\nNo aplicativo, você consegue:\n• Agendar consultas.\n• Ver a rede credenciada.\n• Solicitar autorizações.\n• Consultar boletos e histórico.\n\nO passo mais importante daqui para frente é manter o pagamento em dia, para não ter surpresas de suspensão ou cancelamento por atraso. Qualquer dúvida sobre uso da rede, carência ou coberturas, pode me chamar que eu te ajudo a entender."
+      },
+      {
+        "id": "pos_venda_agradecimento_final",
+        "descricao": "Mensagem de agradecimento e relacionamento pós-venda",
+        "texto": "Quero te agradecer pela confiança em escolher a Humana Saúde e permitir que eu te ajudasse nesse processo.\n\nPlano de saúde não é só um papel ou um boleto: é tranquilidade para você e para quem você ama. É saber que, se algo acontecer, existe um caminho estruturado para atendimento, sem precisar decidir tudo em cima da hora.\n\nSe em algum momento surgir dúvida sobre:\n• Coberturas.\n• Uso do app.\n• Rede credenciada.\n• Inclusão de dependentes.\n• Ou qualquer situação específica com o plano.\n\nPode falar comigo. A ideia não é só “vender e sumir”, mas caminhar junto quando você precisar de orientação.\n\nE, se conhecer alguém que esteja perdido tentando entender plano de saúde, pode indicar meu contato. Vou ter o maior cuidado em explicar com a mesma clareza que usei com você."
+      }
+    ]
+  }
+}
