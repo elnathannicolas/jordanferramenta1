@@ -1,0 +1,69 @@
+{
+  "tool": "ferramenta06",
+  "versao": "1.0",
+  "description": "Checklists de documentos (PF/PJ, com/sem dependentes, com odonto) + mensagens de protocolo e encaminhamento.",
+  "data": {
+    "itens": [
+      {
+        "id": "doc_pf_sem_dependentes",
+        "descricao": "Checklist de documentos para contratação PF (apenas titular).",
+        "aplicacao": "Pessoa Física, apenas o titular no plano.",
+        "texto": "📄 Perfeito, {NOME}! Para dar sequência ao seu plano como Pessoa Física, vou precisar destes documentos seus (titular):\n\n✅ Documentos do titular:\n• RG ou CNH (frente e verso)\n• CPF ou Cartão SUS\n• Comprovante de endereço atualizado (até 90 dias)\n• Selfie segurando o documento de identificação\n\n📲 Você pode me enviar as fotos por aqui mesmo no WhatsApp."
+      },
+      {
+        "id": "doc_pf_com_dependentes",
+        "descricao": "Checklist de documentos para contratação PF com dependentes.",
+        "aplicacao": "Pessoa Física com dependentes (cônjuge, filhos etc.).",
+        "texto": "📄 Ótimo, {NOME}! Para seguir com o plano Pessoa Física com dependentes, vou precisar dos documentos abaixo:\n\n✅ Do titular:\n• RG ou CNH (frente e verso)\n• CPF ou Cartão SUS\n• Comprovante de endereço atualizado (até 90 dias)\n• Selfie segurando o documento de identificação\n\n✅ De cada dependente:\n• RG ou Certidão de nascimento\n• CPF ou Cartão SUS\n\n📲 Pode me enviar tudo por aqui mesmo no WhatsApp, em fotos legíveis."
+      },
+      {
+        "id": "doc_pj_mei_sem_dependentes",
+        "descricao": "Checklist de documentos para contratação PJ/MEI apenas para o titular (sócio/titular do CNPJ).",
+        "aplicacao": "Pessoa Jurídica (inclui MEI), plano somente para o titular do CNPJ.",
+        "texto": "📄 Perfeito, {NOME}! Para seguir com seu plano empresarial pelo CNPJ/MEI, vou precisar destes documentos:\n\n✅ Do titular (beneficiário):\n• RG ou CNH (frente e verso)\n• CPF ou Cartão SUS\n• Comprovante de endereço atualizado (até 90 dias)\n• Selfie segurando o documento de identificação\n\n✅ Do CNPJ:\n• Cartão CNPJ\n• Contrato Social ou Certificado de MEI\n\n📲 Me envie as fotos por aqui mesmo no WhatsApp, de forma legível, que eu organizo tudo para você."
+      },
+      {
+        "id": "doc_pj_mei_com_dependentes",
+        "descricao": "Checklist de documentos para contratação PJ/MEI com dependentes (familiares, sócios etc.).",
+        "aplicacao": "Pessoa Jurídica (inclui MEI) com dependentes vinculados ao titular.",
+        "texto": "📄 Ótimo, {NOME}! Para seguir com o plano empresarial via CNPJ/MEI com dependentes, preciso dos seguintes documentos:\n\n✅ Do titular (beneficiário principal):\n• RG ou CNH (frente e verso)\n• CPF ou Cartão SUS\n• Comprovante de endereço atualizado (até 90 dias)\n• Selfie segurando o documento de identificação\n\n✅ De cada dependente:\n• RG ou Certidão de nascimento\n• CPF ou Cartão SUS\n\n✅ Do CNPJ:\n• Cartão CNPJ\n• Contrato Social ou Certificado de MEI\n\n📲 Pode me enviar tudo por aqui mesmo no WhatsApp. Assim que receber, eu organizo o dossiê para o time interno seguir com a análise."
+      },
+      {
+        "id": "doc_pf_com_odonto",
+        "descricao": "Checklist para PF quando o cliente contrata plano de saúde + odontológico.",
+        "aplicacao": "Pessoa Física, titular (com ou sem dependentes) incluindo plano odontológico.",
+        "texto": "📄 Show, {NOME}! Como vamos incluir saúde + odontológico, os documentos são estes:\n\n✅ Do titular:\n• RG ou CNH (frente e verso)\n• CPF ou Cartão SUS\n• Comprovante de endereço atualizado (até 90 dias)\n• Selfie segurando o documento de identificação\n\n✅ Se tiver dependentes:\n• RG ou Certidão de nascimento de cada dependente\n• CPF ou Cartão SUS de cada dependente\n\nEsses dados servem tanto para o plano de saúde quanto para o odontológico.\n\n📲 Pode me mandar tudo por aqui mesmo no WhatsApp."
+      },
+      {
+        "id": "doc_pj_com_odonto",
+        "descricao": "Checklist para PJ quando contrata saúde + odontológico.",
+        "aplicacao": "Pessoa Jurídica/MEI com saúde + odontológico (titular e/ou dependentes).",
+        "texto": "📄 Maravilha, {NOME}! Para o combo saúde + odontológico no CNPJ, vou precisar de:\n\n✅ Do titular (beneficiário principal):\n• RG ou CNH (frente e verso)\n• CPF ou Cartão SUS\n• Comprovante de endereço atualizado (até 90 dias)\n• Selfie segurando o documento de identificação\n\n✅ De cada dependente (se houver):\n• RG ou Certidão de nascimento\n• CPF ou Cartão SUS\n\n✅ Do CNPJ:\n• Cartão CNPJ\n• Contrato Social ou Certificado de MEI\n\n📲 Me envia as fotos por aqui mesmo, que eu deixo tudo pronto para o time interno seguir com a contratação."
+      },
+      {
+        "id": "doc_declaracao_saude",
+        "descricao": "Texto para orientar o cliente sobre a declaração de saúde / questionário.",
+        "aplicacao": "Complemento após checklist de documentos, quando for necessário enviar link de DS.",
+        "texto": "📋 Antes de finalizar a parte cadastral, tem um passo importante: a declaração de saúde.\n\nEla é um questionário simples onde você informa se:\n• Já teve alguma doença mais séria\n• Faz tratamento contínuo\n• Usa remédios diariamente\n\n💡 Em geral funciona assim:\n• Se você marcar tudo como NÃO, a análise costuma ser mais rápida.\n• Se marcar algum SIM, pode ser que a operadora peça uma entrevista médica ou análise mais detalhada.\n\nCoisas pontuais como dor de cabeça eventual, cólica ou resfriado geralmente não entram como doença crônica.\n\nNa dúvida, é só me chamar aqui antes de responder, que eu te ajudo 😊"
+      },
+      {
+        "id": "doc_pedido_peso_altura",
+        "descricao": "Mensagem específica para solicitar peso e altura (quando necessário para análise de risco/IMC).",
+        "aplicacao": "Quando for necessário informar IMC ou avaliação de risco.",
+        "texto": "Ah, e só mais uma coisa, {NOME}: preciso do seu peso e altura aproximados.\n\nEssas informações servem apenas para a avaliação de risco da operadora (IMC). Em alguns casos, quando o índice está muito acima da média, eles podem pedir uma análise extra ou entrevista médica.\n\nPode me informar peso e altura por aqui mesmo."
+      },
+      {
+        "id": "msg_protocolo_apos_documentos",
+        "descricao": "Mensagem padrão de protocolo 48321 que deve ser enviada SEPARADA após solicitar documentos.",
+        "aplicacao": "Sempre que o Jordan concluir a orientação e solicitar documentos para seguir com a contratação.",
+        "texto": "📋 Já registrei o seu atendimento aqui no meu sistema.\n\nEste é o seu protocolo de atendimento com a Humana através de mim:\n\n🔐 Protocolo: 48321\n\nGuarda esse número, {NOME}, porque ele identifica tudo o que alinhamos até aqui."
+      },
+      {
+        "id": "msg_encaminhamento_pos_documentos",
+        "descricao": "Mensagem de fechamento suave, explicando que a partir daqui o time interno continua.",
+        "aplicacao": "Encerramento do atendimento consultivo do Jordan após envio do checklist + protocolo.",
+        "texto": "A partir de agora, {NOME}, o time interno da Humana Saúde segue com a análise da documentação e os próximos passos da contratação.\n\nSe surgir qualquer dúvida, se faltar algum documento ou se você quiser ajustar alguma coisa, pode falar comigo por aqui que eu te ajudo a organizar tudo.\n\nMeu papel é te acompanhar nesse processo para que fique o mais simples possível pra você 😊"
+      }
+    ]
+  }
+}
