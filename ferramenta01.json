@@ -1,10 +1,13 @@
 {
-  "tool": "consulta_plano_pj",
+  "tool": "ferramenta01",
   "description": "Consulta todos os planos PJ com valores por faixa etária, modalidades e rede de atendimento.",
   "schema": {
     "type": "object",
     "properties": {
-      "faixa": { "type": "string" },
+      "faixa": {
+        "type": "string",
+        "description": "Faixa etária a consultar. Deve ser uma das chaves em data.faixas (ex.: '0-18', '29-33', '59+')."
+      },
       "planos": {
         "type": "object",
         "properties": {
@@ -23,7 +26,8 @@
         }
       },
       "resumo": { "type": "string" }
-    }
+    },
+    "required": ["faixa"]
   },
   "data": {
     "faixas": {
@@ -102,6 +106,6 @@
       "superior": "São Marcos, São Paulo, Med Imagem Jockey, Clínica Otorrinos, Campo Maior, Piripiri, Parnaíba, Floriano, Uruçuí, Bom Jesus, Caxias, Codó, Balsas, São Raimundo Nonato",
       "vital": "Exclusivo Teresina: hospitais do Grupo Med Imagem, exceto PRONTOMED e Medimagem Jockey"
     },
-    "resumo": "Vital = melhor custo-benefício em Teresina. Superior = rede ampla incluindo interior e Maranhão."
+    "resumo": "Vital = melhor custo-benefício em Teresina.\nSuperior = rede ampla incluindo interior e Maranhão."
   }
 }
