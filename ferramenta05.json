@@ -1,0 +1,133 @@
+{
+  "tool": "ferramenta05",
+  "versao": "1.0",
+  "description": "Respostas prontas para objeções comuns no atendimento (preço, coparticipação, indecisão, portabilidade, cancelamento etc.).",
+  "data": {
+    "itens": [
+      {
+        "id": "ob_preco_caro",
+        "descricao": "Cliente diz que o plano está caro ou acima do que pode pagar.",
+        "gatilhos": [
+          "está caro",
+          "muito caro",
+          "nao tenho como pagar isso",
+          "fora do meu orçamento",
+          "acima do que posso pagar"
+        ],
+        "texto": "Entendo sua preocupação com o valor, isso é super comum 💙\n\nMas deixa eu te mostrar uma conta rápida:\n\nSem plano:\n• 1 consulta particular pode ficar entre R$ 400 e R$ 600\n• 1 exame simples muitas vezes passa de R$ 200\n• 1 ultrassom pode ir de R$ 300 pra cima\n\nOu seja: em 1 único uso, você pode gastar o equivalente a 2 ou 3 mensalidades do plano.\n\nCom o plano:\n✅ Consultas e exames têm cobertura conforme a rede credenciada\n✅ Internações saem muito mais em conta do que particular\n✅ Você tem proteção pra situações inesperadas\n\nSe você quiser, posso ver se existe alguma opção mais em conta dentro do que você precisa hoje, sem perder a segurança."
+      },
+      {
+        "id": "ob_coparticipacao_nao_entendi",
+        "descricao": "Cliente não entendeu a diferença entre coparticipação básica e completa.",
+        "gatilhos": [
+          "nao entendi a coparticipacao",
+          "nao entendi a diferença",
+          "qual a diferença da basica pra completa",
+          "qual a diferença da coparticipação"
+        ],
+        "texto": "É bem simples, vou resumir:\n\n🔹 COPARTICIPAÇÃO COMPLETA\n• Mensalidade mais barata\n• Você paga uma taxa quando usa: consulta, exame etc.\n• Internações e cirurgias não costumam ter coparticipação\n\n🔹 COPARTICIPAÇÃO BÁSICA\n• Mensalidade um pouco maior\n• Você não paga nada em consultas, pronto-socorro, exames, internações e cirurgias\n• Paga apenas em terapias como psicologia, fisioterapia geral, fonoaudiologia e nutrição (um percentual em cima do valor da operadora)\n\nSe você usa o plano com frequência, a Básica costuma trazer mais tranquilidade.\nSe usa pouco, a Completa pode compensar mais no valor mensal."
+      },
+      {
+        "id": "ob_coparticipacao_qual_mais_barata_final",
+        "descricao": "Cliente pergunta qual coparticipação sai mais barata no final: básica ou completa.",
+        "gatilhos": [
+          "qual sai mais barata",
+          "qual compensa mais no final",
+          "qual vale mais a pena no final",
+          "basica ou completa qual é melhor"
+        ],
+        "texto": "Depende muito de quanto você usa o plano na prática.\n\nSe você costuma ir bastante ao médico (3 ou mais consultas por mês, faz exames com frequência, usa terapias):\n→ A COPARTICIPAÇÃO BÁSICA geralmente fica mais vantajosa, porque você não paga nada em consultas e exames.\n\nSe você usa pouco o plano (consulta a cada 2 ou 3 meses, exames esporádicos):\n→ A COPARTICIPAÇÃO COMPLETA costuma sair mais barata, porque a mensalidade é menor e a coparticipação só aparece quando você realmente usa.\n\nA maioria dos clientes que usa o plano com frequência prefere a Básica pela tranquilidade."
+      },
+      {
+        "id": "ob_coparticipacao_caro_pagar_toda_vez",
+        "descricao": "Cliente reclama de ter que pagar coparticipação toda vez que usa.",
+        "gatilhos": [
+          "nao quero pagar toda vez",
+          "nao quero pagar coparticipacao",
+          "caro pagar toda vez",
+          "nao gosto dessa taxa toda consulta"
+        ],
+        "texto": "Entendo, parece mesmo chato pensar em pagar toda vez que usa o plano.\n\nMas olha a diferença entre ter plano com coparticipação e ir totalmente no particular:\n\nSem plano:\n❌ Consulta particular: facilmente R$ 400 a R$ 600\n❌ Exame simples: muitas vezes acima de R$ 200\n\nCom plano na modalidade COMPLETA, por exemplo:\n✅ Consulta: uma taxa bem menor, uma fração do particular\n✅ Exames: valores muito abaixo do que seria sem plano\n\nE se você não quiser pagar nada em consulta e exame, existe a opção de COPARTICIPAÇÃO BÁSICA, em que a mensalidade é um pouco maior, mas você fica isento na maior parte dos usos e só participa em terapias específicas.\n\nNos dois casos, você acaba economizando bastante em relação ao particular."
+      },
+      {
+        "id": "ob_vou_pensar",
+        "descricao": "Cliente diz que vai pensar ou quer decidir depois.",
+        "gatilhos": [
+          "vou pensar",
+          "depois eu vejo",
+          "depois eu decido",
+          "mais tarde eu resolvo",
+          "ainda vou analisar"
+        ],
+        "texto": "Tranquilo, é super importante decidir com calma mesmo 😊\n\nSó gosto de lembrar dois pontos importantes:\n\n📍 Plano de saúde é uma proteção para antes de precisar. Quando acontece alguma coisa séria, normalmente já é tarde para contratar com carências menores.\n📍 Os valores podem mudar com reajustes e atualizações da operadora.\n\nSe você quiser, eu posso deixar essa proposta separada por um tempo para você pensar com tranquilidade.\n\nEnquanto isso, se surgir qualquer dúvida, pode me chamar aqui que eu te ajudo a ajustar tudo do jeito que ficar melhor pra você."
+      },
+      {
+        "id": "ob_ja_tenho_plano",
+        "descricao": "Cliente informa que já tem um plano de saúde atual.",
+        "gatilhos": [
+          "ja tenho plano",
+          "eu ja tenho convênio",
+          "eu ja tenho outro plano",
+          "já sou de outra operadora"
+        ],
+        "texto": "Que bom que você já se cuida e tem plano de saúde 💙\n\nPosso te perguntar qual é o plano ou operadora que você usa hoje?\n\n[Aguardar resposta mentalmente antes de continuar]\n\nE você está totalmente satisfeito com ele ou tem algo que gostaria de melhorar, como valor, rede de hospitais, médicos ou tempo de autorização?\n\nMuita gente acaba migrando porque:\n• Os reajustes ficam muito altos\n• A rede credenciada não atende bem a região onde mora\n• Tem muita demora em autorizações ou marcações\n\nA vantagem de olhar outra opção é:\n✅ Possibilidade de reduzir valor\n✅ Encontrar uma rede mais interessante pra sua rotina\n✅ Em alguns casos, aproveitar parte das carências já cumpridas\n\nVale, pelo menos, comparar com calma. Se você quiser, eu te ajudo a fazer essa comparação."
+      },
+      {
+        "id": "ob_plano_nao_cobre_parto_agora",
+        "descricao": "Gestante questiona se vale a pena contratar o plano mesmo sem cobertura de parto imediata.",
+        "gatilhos": [
+          "nao cobre meu parto",
+          "nao vai cobrir o parto",
+          "entao nao adianta pra mim o parto",
+          "to gravida e nao cobre o parto"
+        ],
+        "texto": "Essa dúvida é super comum em gestantes: se o plano não cobre o parto agora, será que vale a pena mesmo assim?\n\nDurante a gestação, além do parto, existem várias situações que podem exigir atendimento rápido:\n• Sangramentos\n• Dores fortes\n• Alterações de pressão\n• Suspeita de descolamento de placenta\n• Contrações antes da hora\n\nNessas horas, ter um plano que te leva para um hospital particular, com estrutura, equipe de plantão e segurança, faz muita diferença.\n\nMesmo que o parto ainda esteja em carência, urgências obstétricas e atendimentos emergenciais costumam ter cobertura bem antes disso, garantindo proteção para você e para o bebê ao longo da gravidez.\n\nEntão o plano não serve só para o dia do parto, mas para te dar suporte em toda a gestação."
+      },
+      {
+        "id": "ob_plano_nao_cobre_minha_cidade",
+        "descricao": "Cliente reclama que o plano não tem rede hospitalar diretamente na cidade onde mora.",
+        "gatilhos": [
+          "nao tem hospital na minha cidade",
+          "nao cobre minha cidade",
+          "aqui na minha cidade nao tem rede",
+          "nao tem cobertura aqui"
+        ],
+        "texto": "Entendo a sua preocupação, é chato mesmo quando a cidade não tem a rede completa que a gente gostaria.\n\nMas mesmo assim o plano pode fazer uma boa diferença na sua proteção:\n\n✅ Você pode usar a rede em cidades próximas, quando for viajar, trabalhar ou visitar alguém.\n✅ Em muitos casos, você tem acesso a telemedicina, conseguindo atendimento com médicos por vídeo, sem precisar sair de casa.\n✅ Em situações de urgência fora da sua cidade, o plano te ampara conforme as regras da operadora e da ANS.\n\nAlém disso, muita gente organiza consultas e exames em uma única ida à cidade onde a rede é mais forte, economizando bastante em relação ao particular.\n\nNão é o cenário perfeito, mas ainda assim pode ser uma forma de garantir um cuidado melhor do que ficar totalmente descoberto."
+      },
+      {
+        "id": "ob_posso_mudar_de_plano_depois",
+        "descricao": "Cliente pergunta se poderá mudar de plano (upgrade/downgrade) depois.",
+        "gatilhos": [
+          "posso mudar de plano depois",
+          "consigo trocar de plano depois",
+          "e se eu quiser mudar depois",
+          "posso fazer upgrade depois"
+        ],
+        "texto": "Em muitos casos é possível sim fazer mudanças de plano, principalmente quando a troca é para uma categoria superior (upgrade).\n\nPor exemplo:\n• Sair de um plano mais básico para um mais completo\n• Ajustar acomodação ou tipo de coparticipação\n\nMas é importante entender que:\n⚠️ A operadora avalia cada pedido de mudança\n⚠️ Algumas coberturas podem manter carências já cumpridas, outras podem ter prazos novos\n⚠️ Downgrade (ir para um plano mais simples) costuma ter mais restrições\n\nPor isso a melhor estratégia é escolher hoje algo que já faça sentido para a sua realidade atual, e, se no futuro sua situação mudar, a gente analisa juntos as possibilidades."
+      },
+      {
+        "id": "ob_portabilidade_reaproveita_carencia",
+        "descricao": "Cliente pergunta se consegue reaproveitar carências ao trocar de operadora ou plano.",
+        "gatilhos": [
+          "vou perder carencia",
+          "aproveita carencia",
+          "tenho carencia cumprida",
+          "portabilidade de plano",
+          "mudar sem perder carencia"
+        ],
+        "texto": "Quando você já tem um plano de saúde há algum tempo, em muitos casos é possível migrar aproveitando parte das carências já cumpridas.\n\nNa prática, funciona mais ou menos assim (dependendo das regras da operadora e da ANS):\n• Urgências e emergências costumam continuar cobertas sem voltar ao zero\n• Consultas e exames podem ter grande parte das carências reaproveitadas\n• Internações e terapias seguem regras específicas, mas normalmente não recomeçam do zero em todas as coberturas\n• Parto e doenças preexistentes têm regras próprias, com prazos mais longos\n\nOu seja: você não costuma perder tudo que já cumpriu. Por isso sempre vale a pena analisar a portabilidade com calma, em vez de ficar preso a um plano que já não atende mais você."
+      },
+      {
+        "id": "ob_cancelamento",
+        "descricao": "Cliente fala em cancelar o plano; resposta com foco em retenção suave.",
+        "gatilhos": [
+          "quero cancelar",
+          "vou cancelar",
+          "nao quero mais o plano",
+          "como faco para cancelar"
+        ],
+        "texto": "Entendo que você esteja pensando em cancelar o plano, isso acontece bastante.\n\nAntes de qualquer coisa, gosto de olhar três pontos com você:\n1️⃣ Se o motivo é valor, às vezes existe uma alternativa mais em conta dentro da própria operadora, sem você ficar totalmente descoberto.\n2️⃣ Se a sensação é de que você quase não usa, é importante lembrar que o plano é justamente a proteção para quando algo inesperado acontece.\n3️⃣ Se houve algum problema específico (atendimento, autorização, dificuldade em marcar), muitas vezes dá para tentar resolver esse ponto sem precisar abrir mão do plano inteiro.\n\nSe depois disso você decidir seguir com o cancelamento, eu te explico o passo a passo certinho para não ter nenhuma surpresa. A ideia é você decidir com clareza, sabendo exatamente o que está abrindo mão."
+      }
+    ]
+  }
+}
