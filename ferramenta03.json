@@ -1,0 +1,75 @@
+{
+  "tool": "ferramenta03",
+  "description": "Tabela de valores do Coletivo por Adesão (ASSENA, ANACO, UNIPRO) por faixa etária, com valor base e valor com desconto.",
+  "data": {
+    "planos_coletivo_adesao": {
+      "entidades": [
+        "ASSENA – Servidores Públicos",
+        "ANACO – Comércio e Serviços",
+        "UNIPRO – Profissionais Liberais"
+      ],
+      "faixas": [
+        {
+          "faixa_etaria": "0 a 18 anos",
+          "CP_VITAL_PI_QC_CA": { "valor": 146.66, "desconto": 118.15 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 220.02, "desconto": 176.84 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 272.55, "desconto": 218.87 }
+        },
+        {
+          "faixa_etaria": "19 a 23 anos",
+          "CP_VITAL_PI_QC_CA": { "valor": 160.91, "desconto": 129.55 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 241.60, "desconto": 194.11 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 299.40, "desconto": 240.35 }
+        },
+        {
+          "faixa_etaria": "24 a 28 anos",
+          "CP_VITAL_PI_QC_CA": { "valor": 179.71, "desconto": 144.59 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 270.10, "desconto": 216.91 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 334.83, "desconto": 268.69 }
+        },
+        {
+          "faixa_etaria": "29 a 33 anos",
+          "CP_VITAL_PI_QC_CA": { "valor": 204.29, "desconto": 164.26 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 307.34, "desconto": 246.70 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 381.13, "desconto": 305.73 }
+        },
+        {
+          "faixa_etaria": "34 a 38 anos",
+          "CP_VITAL_PI_QC_CA": { "valor": 245.12, "desconto": 196.92 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 369.19, "desconto": 296.18 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 458.03, "desconto": 367.25 }
+        },
+        {
+          "faixa_etaria": "39 a 43 anos",
+          "CP_VITAL_PI_QC_CA": { "valor": 297.89, "desconto": 239.14 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 449.14, "desconto": 360.14 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 557.45, "desconto": 446.79 }
+        },
+        {
+          "faixa_etaria": "44 a 48 anos",
+          "CP_VITAL_PI_QC_CA": { "valor": 370.76, "desconto": 297.43 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 559.52, "desconto": 448.44 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 694.66, "desconto": 556.55 }
+        },
+        {
+          "faixa_etaria": "49 a 53 anos",
+          "CP_VITAL_PI_QC_CA": { "valor": 479.24, "desconto": 384.22 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 723.90, "desconto": 579.95 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 899.06, "desconto": 720.07 }
+        },
+        {
+          "faixa_etaria": "54 a 58 anos",
+          "CP_VITAL_PI_QC_CA": { "valor": 633.65, "desconto": 507.75 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 957.83, "desconto": 767.09 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 1189.91, "desconto": 952.75 }
+        },
+        {
+          "faixa_etaria": "59 anos ou mais",
+          "CP_VITAL_PI_QC_CA": { "valor": 848.34, "desconto": 679.50 },
+          "CP_SUPERIOR_PI_200_QC_CA": { "valor": 1283.06, "desconto": 1027.27 },
+          "CP_SUPERIOR_PI_200_QP_CA": { "valor": 1594.28, "desconto": 1276.25 }
+        }
+      ]
+    }
+  }
+}
