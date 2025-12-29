@@ -1,0 +1,107 @@
+{
+  "tool": "consulta_plano_pj",
+  "description": "Consulta todos os planos PJ com valores por faixa etária, modalidades e rede de atendimento.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "faixa": { "type": "string" },
+      "planos": {
+        "type": "object",
+        "properties": {
+          "superior_enfermaria_completa": { "type": "number" },
+          "superior_enfermaria_basica": { "type": "number" },
+          "superior_apartamento_basica": { "type": "number" },
+          "superior_apartamento_completa": { "type": "number" },
+          "vital_apartamento_completa_teresina": { "type": "number" }
+        }
+      },
+      "rede": {
+        "type": "object",
+        "properties": {
+          "superior": { "type": "string" },
+          "vital": { "type": "string" }
+        }
+      },
+      "resumo": { "type": "string" }
+    }
+  },
+  "data": {
+    "faixas": {
+      "0-18": {
+        "superior_enfermaria_completa": 176.35,
+        "superior_enfermaria_basica": 155.8,
+        "superior_apartamento_basica": 218.41,
+        "superior_apartamento_completa": 192.86,
+        "vital_apartamento_completa_teresina": 129.85
+      },
+      "19-23": {
+        "superior_enfermaria_completa": 193.64,
+        "superior_enfermaria_basica": 171.03,
+        "superior_apartamento_basica": 239.91,
+        "superior_apartamento_completa": 211.79,
+        "vital_apartamento_completa_teresina": 142.48
+      },
+      "24-28": {
+        "superior_enfermaria_completa": 216.45,
+        "superior_enfermaria_basica": 191.12,
+        "superior_apartamento_basica": 268.27,
+        "superior_apartamento_completa": 236.78,
+        "vital_apartamento_completa_teresina": 159.14
+      },
+      "29-33": {
+        "superior_enfermaria_completa": 246.26,
+        "superior_enfermaria_basica": 217.38,
+        "superior_apartamento_basica": 305.33,
+        "superior_apartamento_completa": 269.43,
+        "vital_apartamento_completa_teresina": 180.94
+      },
+      "34-38": {
+        "superior_enfermaria_completa": 295.78,
+        "superior_enfermaria_basica": 261.01,
+        "superior_apartamento_basica": 366.89,
+        "superior_apartamento_completa": 323.68,
+        "vital_apartamento_completa_teresina": 217.13
+      },
+      "39-43": {
+        "superior_enfermaria_completa": 359.78,
+        "superior_enfermaria_basica": 317.41,
+        "superior_apartamento_basica": 446.47,
+        "superior_apartamento_completa": 393.79,
+        "vital_apartamento_completa_teresina": 263.91
+      },
+      "44-48": {
+        "superior_enfermaria_completa": 448.14,
+        "superior_enfermaria_basica": 395.25,
+        "superior_apartamento_basica": 556.33,
+        "superior_apartamento_completa": 490.57,
+        "vital_apartamento_completa_teresina": 328.48
+      },
+      "49-53": {
+        "superior_enfermaria_completa": 579.75,
+        "superior_enfermaria_basica": 511.21,
+        "superior_apartamento_basica": 719.97,
+        "superior_apartamento_completa": 634.75,
+        "vital_apartamento_completa_teresina": 424.66
+      },
+      "54-58": {
+        "superior_enfermaria_completa": 767.02,
+        "superior_enfermaria_basica": 676.2,
+        "superior_apartamento_basica": 952.81,
+        "superior_apartamento_completa": 839.9,
+        "vital_apartamento_completa_teresina": 561.53
+      },
+      "59+": {
+        "superior_enfermaria_completa": 1027.36,
+        "superior_enfermaria_basica": 905.57,
+        "superior_apartamento_basica": 1276.52,
+        "superior_apartamento_completa": 1125.1,
+        "vital_apartamento_completa_teresina": 751.81
+      }
+    },
+    "rede": {
+      "superior": "São Marcos, São Paulo, Med Imagem Jockey, Clínica Otorrinos, Campo Maior, Piripiri, Parnaíba, Floriano, Uruçuí, Bom Jesus, Caxias, Codó, Balsas, São Raimundo Nonato",
+      "vital": "Exclusivo Teresina: hospitais do Grupo Med Imagem, exceto PRONTOMED e Medimagem Jockey"
+    },
+    "resumo": "Vital = melhor custo-benefício em Teresina. Superior = rede ampla incluindo interior e Maranhão."
+  }
+}
