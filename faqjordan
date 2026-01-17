@@ -1,494 +1,342 @@
 {
-  "dataset": {
-    "name": "FAQ — Humana Saúde (Nordeste / PI) — Base para RAG",
-    "language": "pt-BR",
-    "region": "BR-NE-PI",
-    "official_domain": "humanasaude.com.br",
-    "last_official_channels_check": "2026-01-12",
-    "created_at": "2026-01-13",
-    "version": "1.0.0"
+  "schema_version": "faq_kb_v1",
+  "kb_name": "faqjordan",
+  "kb_title": "FAQ — Humana Saúde (Nordeste / PI) — Base para RAG",
+  "locale": "pt-BR",
+  "region": "BR-PI",
+  "official_domain": "humanasaude.com.br",
+  "last_verified_date": "2026-01-12",
+  "global_rules": {
+    "no_inventing": true,
+    "prefer_official_channels": true,
+    "when_info_is_unverified_internal": "O agente deve evitar afirmar como oficial. Pode apresentar como 'contato informado para suporte do app' e sempre oferecer o canal principal oficial.",
+    "if_not_in_flow_and_not_in_faq": "Não consigo confirmar essa informação com segurança por aqui. Posso te orientar pelos canais oficiais ou seguir ajudando por outro caminho. Me diga em uma linha o que você precisa."
   },
-  "rag_guidelines": {
-    "source_priority": [
-      "official_site",
-      "official_regulator",
-      "official_support_channel",
-      "internal_unverified",
-      "user_provided_unverified"
-    ],
-    "answer_style": {
-      "prefer_short_first": true,
-      "include_details_on_request": true,
-      "avoid_absolute_claims_when_unverified": true,
-      "recommend_protocol_storage": true
-    },
-    "safety_notes": [
-      "Quando a origem for internal_unverified ou user_provided_unverified, o agente deve usar linguagem de cautela (ex.: 'contatos informados internamente', 'pode variar', 'recomendamos confirmar no site/canal oficial').",
-      "Para cancelamento/reajustes, orientar sempre a guardar protocolo e checar regras do contrato."
-    ]
-  },
-  "faq_items": [
+  "entries": [
     {
       "id": "FAQ-A01",
-      "category": { "code": "A", "name": "Tipos de plano" },
-      "title": "Diferença entre planos Pessoa Física e Pessoa Jurídica",
+      "category": "Tipos de plano",
+      "title": "Diferença entre Pessoa Física e Pessoa Jurídica",
       "question": "Qual a diferença entre plano Pessoa Física e Pessoa Jurídica?",
-      "answer": {
-        "short": "PF é no CPF e tem reajuste regulado pela ANS; PJ é no CNPJ/MEI e reajusta conforme uso/sinistralidade.",
-        "details": [
-          "Pessoa Física (Individual/Familiar): contrato no CPF; reajuste definido pela ANS; vantagem: mais estabilidade e proteção ao cliente.",
-          "Pessoa Jurídica (Empresarial): contrato no CNPJ/MEI; pode ser 1 pessoa ou grupo; reajuste pela sinistralidade; vantagem: costuma ser mais barato, mais opções e dependendo do nº de vidas pode ter carência zero."
-        ]
-      },
+      "answer_short": "PF é no CPF e tem reajuste regulado pela ANS; PJ é no CNPJ/MEI e reajusta conforme uso/sinistralidade.",
+      "answer_details": [
+        "Pessoa Física (Individual/Familiar): contrato no CPF; reajuste definido pela ANS; mais estabilidade e proteção ao cliente.",
+        "Pessoa Jurídica (Empresarial): contrato no CNPJ/MEI; pode ser 1 pessoa ou grupo; reajuste pela sinistralidade; costuma ser mais barato e ter mais opções; dependendo do nº de vidas pode ter carência zero."
+      ],
       "tags": ["plano_pf", "plano_pj", "empresarial", "mei", "reajuste_ans", "sinistralidade"],
-      "sources": [
-        {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Conteúdo fornecido pelo usuário para base de RAG."
-        }
-      ]
+      "links": [],
+      "source": { "type": "provided_text", "confidence": "high", "notes": "Conteúdo fornecido pelo usuário para base RAG." },
+      "agent_usage": { "when_to_use": "Quando o cliente pergunta PF vs PJ/MEI, diferenças de contrato/reajuste." }
     },
     {
       "id": "FAQ-B01",
-      "category": { "code": "B", "name": "Coparticipação" },
-      "title": "O que é coparticipação?",
+      "category": "Coparticipação",
+      "title": "O que é coparticipação",
       "question": "O que é plano com coparticipação?",
-      "answer": {
-        "short": "Você paga mensalidade fixa e uma taxa quando utiliza o plano."
-      },
-      "tags": ["coparticipacao"],
-      "sources": [
-        {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Definição operacional conforme material fornecido."
-        }
-      ]
+      "answer_short": "Você paga mensalidade fixa e uma taxa quando utiliza o plano.",
+      "answer_details": [],
+      "tags": ["coparticipacao", "conceito"],
+      "links": [],
+      "source": { "type": "provided_text", "confidence": "high", "notes": "" },
+      "agent_usage": { "when_to_use": "Quando o cliente pede definição rápida do que é coparticipação." }
     },
     {
       "id": "FAQ-B02",
-      "category": { "code": "B", "name": "Coparticipação" },
-      "title": "Tipos de coparticipação: Completa vs. Básica",
+      "category": "Coparticipação",
+      "title": "Tipos de coparticipação e diferenças",
       "question": "Quais tipos existem e qual a diferença?",
-      "answer": {
-        "short": "Completa cobra em mais usos; Básica concentra cobrança em atendimentos contínuos.",
-        "details": [
-          "Coparticipação COMPLETA:",
-          "• R$ 20 por consulta",
-          "• R$ 40 urgência/emergência",
-          "• até R$ 20 exames simples (ex.: ultrassom, endoscopia, eco)",
-          "• até R$ 70,0 alta complexidade (ex.: tomografia e ressonância)",
-          "• Ideal pra uso moderado e plano com internação/cirurgias (exceto estéticas).",
-          "Coparticipação BÁSICA:",
-          "• Cobranças em atendimentos contínuos: psicologia, fisioterapia, fonoaudiologia, nutrição",
-          "• Paga 40% do valor de custo da sessão (não do particular), limite R$ 150/mês",
-          "• Exemplo: se operadora paga R$ 50/sessão, cliente paga R$ 20",
-          "• Consulta eletiva: R$ 20,00 em todos os planos",
-          "• Consulta em hospital/pronto-socorro:",
-          "  – Ambulatorial e Vital: R$ 30,00",
-          "  – Superior/Premium Nacional: R$ 40,00",
-          "• Exames simples e especiais: isentos",
-          "• Terapias (Grupos 1 e 2): isentas",
-          "• Terapias Grupo 3 (tratamentos contínuos): 40% com máximo R$ 70/procedimento",
-          "• Internação:",
-          "  – Ambulatorial: não se aplica",
-          "  – Vital/Superior/Premium Nacional: isento"
-        ],
-        "values_as_text": {
-          "completa": {
-            "consulta": "R$ 20",
-            "urgencia_emergencia": "R$ 40",
-            "exames_simples_ate": "R$ 20",
-            "alta_complexidade_ate": "R$ 70,0"
-          },
-          "basica": {
-            "consulta_eletiva": "R$ 20,00",
-            "ps_faixa_ambulatorial_vital": "R$ 30,00",
-            "ps_faixa_superior_premium_nacional": "R$ 40,00",
-            "tratamentos_continuos_percentual": "40% do custo",
-            "limite_mensal_tratamentos_continuos": "R$ 150/mês",
-            "teto_tratamentos_grupo3_por_procedimento": "R$ 70/procedimento",
-            "exames_simples_especiais": "isentos",
-            "terapias_grupo1_2": "isentas",
-            "internacao_vital_superior_premium": "isento"
-          }
-        }
-      },
+      "answer_short": "Completa cobra em mais usos; Básica concentra cobrança em atendimentos contínuos.",
+      "answer_details": [
+        "Coparticipação COMPLETA:",
+        "- R$ 20 por consulta",
+        "- R$ 40 urgência/emergência",
+        "- até R$ 20 exames simples (ex.: ultrassom, endoscopia, eco)",
+        "- até R$ 70,0 alta complexidade (ex.: tomografia e ressonância)",
+        "- Ideal pra uso moderado e plano com internação/cirurgias (exceto estéticas).",
+        "Coparticipação BÁSICA:",
+        "- cobranças em atendimentos contínuos: psicologia, fisioterapia, fonoaudiologia, nutrição",
+        "- paga 40% do valor de custo da sessão (não do particular), limite R$ 150/mês",
+        "- exemplo: se operadora paga R$ 50/sessão, cliente paga R$ 20",
+        "- Consulta eletiva: R$ 20,00 em todos os planos",
+        "- Consulta em hospital/pronto-socorro:",
+        "  * Ambulatorial e Vital: R$ 30,00",
+        "  * Superior/Premium Nacional: R$ 40,00",
+        "- Exames simples e especiais: isentos",
+        "- Terapias (Grupos 1 e 2): isentas",
+        "- Terapias Grupo 3 (tratamentos contínuos): 40% com máximo R$ 70/procedimento",
+        "- Internação:",
+        "  * Ambulatorial: não se aplica",
+        "  * Vital/Superior/Premium Nacional: isento"
+      ],
       "tags": ["coparticipacao", "valores", "urgencia", "exames", "terapias", "internacao"],
-      "sources": [
-        {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Valores mantidos exatamente como fornecidos."
-        }
-      ]
+      "links": [],
+      "source": { "type": "provided_text", "confidence": "high", "notes": "" },
+      "agent_usage": { "when_to_use": "Quando o cliente pede diferença entre coparticipação básica vs completa, e valores." }
     },
     {
       "id": "FAQ-C01",
-      "category": { "code": "C", "name": "Reajustes" },
-      "title": "Reajuste anual por tipo de contrato",
+      "category": "Reajustes",
+      "title": "Como funciona o reajuste anual por contrato",
       "question": "Como funciona o reajuste anual por contrato?",
-      "answer": {
-        "short": "PF tem teto da ANS; PJ e adesão variam conforme regras do contrato (operadora/administradora).",
-        "details": [
-          "Pessoa Física (Individual/Familiar): ANS define teto anual.",
-          "• Teto de 6,91% valeu para maio/2024 a abril/2025.",
-          "• Teto de 6,06% vale para maio/2025 a abril/2026.",
-          "Pessoa Jurídica (Empresarial): reajuste definido pela operadora; varia conforme uso e nº de vidas.",
-          "Coletivo por Adesão: reajuste definido pela administradora; pode ser maior que o individual."
-        ],
-        "reference_periods": [
-          { "period": "2024-05 to 2025-04", "ans_ceiling_percent": "6,91%" },
-          { "period": "2025-05 to 2026-04", "ans_ceiling_percent": "6,06%" }
-        ]
-      },
+      "answer_short": "PF tem teto da ANS; PJ e adesão variam conforme regras do contrato (operadora/administradora).",
+      "answer_details": [
+        "Pessoa Física (Individual/Familiar): ANS define teto anual.",
+        "Teto de 6,91% valeu para maio/2024 a abril/2025.",
+        "Teto de 6,06% vale para maio/2025 a abril/2026.",
+        "Pessoa Jurídica (Empresarial): reajuste definido pela operadora; varia conforme uso e nº de vidas.",
+        "Coletivo por Adesão: reajuste definido pela administradora; pode ser maior que o individual."
+      ],
       "tags": ["reajuste", "ans", "individual_familiar", "empresarial", "adesao"],
-      "sources": [
-        {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Percentuais e períodos fornecidos no material; recomendado validar no regulador/ANS quando necessário."
-        }
-      ]
+      "links": [],
+      "source": { "type": "provided_text", "confidence": "medium", "notes": "Percentuais e períodos foram fornecidos na base; se necessário, confirmar em fonte oficial." },
+      "agent_usage": { "when_to_use": "Quando o cliente pergunta sobre reajuste anual e diferenças PF/PJ/adesão." }
     },
     {
       "id": "FAQ-C02",
-      "category": { "code": "C", "name": "Reajustes" },
+      "category": "Reajustes",
       "title": "Reajuste por faixa etária",
       "question": "O que é reajuste por faixa etária?",
-      "answer": {
-        "short": "Acontece quando muda a faixa de idade (ex.: 00–18 | 19–23 | … | 59+).",
-        "details": [
-          "Ao passar de uma faixa pra outra (ex.: 38→39), o valor pode subir conforme a nova faixa."
-        ]
-      },
+      "answer_short": "Acontece quando muda a faixa de idade (ex.: 00–18 | 19–23 | … | 59+).",
+      "answer_details": [
+        "Ao passar de uma faixa pra outra (ex.: 38→39), o valor pode subir conforme a nova faixa."
+      ],
       "tags": ["faixa_etaria", "idade", "reajuste"],
-      "sources": [
-        {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Explicação conceitual conforme material fornecido."
-        }
-      ]
+      "links": [],
+      "source": { "type": "provided_text", "confidence": "high", "notes": "" },
+      "agent_usage": { "when_to_use": "Quando o cliente pergunta por que subiu ao mudar de idade/faixa." }
     },
     {
       "id": "FAQ-D01",
-      "category": { "code": "D", "name": "Carência e preexistência" },
-      "title": "O que é carência? (prazos)",
+      "category": "Carência e preexistência",
+      "title": "O que é carência e prazos (conforme base)",
       "question": "O que significa carência no plano de saúde?",
-      "answer": {
-        "short": "É o tempo após contratar para ter acesso a certas coberturas.",
-        "details": [
-          "Prazos (como fornecido):",
-          "• 24h urgência/emergência",
-          "• 30 dias consultas, exames ou terapias ambulatoriais básicas",
-          "• 180 dias internação, cirurgia, exames especiais/de imagem (ultrassom, mamografia, endoscopias) e procedimentos especiais (psicologia, fono, fisio, terapias) e exames complexos — desde que não sejam voltados a doenças que já existem",
-          "• 300 dias parto e assistência neonatal",
-          "• 24 meses para tratar doença preexistente"
-        ]
-      },
+      "answer_short": "É o tempo após contratar para ter acesso a certas coberturas, conforme regras da ANS.",
+      "answer_details": [
+        "Prazos (conforme base):",
+        "- 24h urgência/emergência",
+        "- 30 dias consultas, exames ou terapias ambulatoriais básicas",
+        "- 180 dias internação, cirurgia, exames especiais/de imagem (ultrassom, mamografia, endoscopias) e procedimentos especiais (psicologia, fono, fisio, terapias) e exames complexos — desde que não sejam voltados a doenças que já existem",
+        "- 300 dias parto e assistência neonatal",
+        "- 24 meses para tratar doença preexistente"
+      ],
       "tags": ["carencia", "prazos", "urgencia", "internacao", "parto", "preexistente"],
-      "sources": [
-        {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Prazos mantidos como fornecidos; podem variar por contrato/segmentação e regras regulatórias."
-        }
-      ]
+      "links": [],
+      "source": { "type": "provided_text", "confidence": "medium", "notes": "Prazos podem variar por contrato/migração. Se o cliente exigir confirmação legal, direcionar ao canal oficial." },
+      "agent_usage": { "when_to_use": "Quando o cliente pergunta prazos de carência e cobertura inicial." }
     },
     {
       "id": "FAQ-D02",
-      "category": { "code": "D", "name": "Carência e preexistência" },
-      "title": "Doença preexistente: como orientar o cliente",
+      "category": "Carência e preexistência",
+      "title": "Doença preexistente: como orientar",
       "question": "Como explicar preexistência (“problemas que já existem”)?",
-      "answer": {
-        "short": "Existe carência de 2 anos para cobertura de preexistência e, com coparticipação, o custo pode subir em uso frequente.",
-        "details": [
-          "Se a pessoa já enfrenta condição mais grave, pode não compensar contratar agora porque o que ela mais precisa não é atendido de imediato.",
-          "Como há coparticipação, cada uso pode aumentar o custo mensal se precisar de muitos atendimentos.",
-          "Frase sugerida (como fornecido): “Quero muito te ajudar… sendo sincero… se surgir opção melhor, pode contar comigo. Ah, existe essa opção.”"
-        ]
-      },
+      "answer_short": "Existe carência de 2 anos para cobertura de preexistência; com coparticipação, uso frequente pode elevar custo.",
+      "answer_details": [
+        "Se a pessoa já enfrenta condição mais grave, pode não compensar contratar agora porque o que ela mais precisa não é atendido de imediato.",
+        "Como há coparticipação, cada uso pode aumentar o custo mensal se precisar de muitos atendimentos.",
+        "Frase sugerida (base): “Quero muito te ajudar… sendo sincero… se surgir opção melhor, pode contar comigo. Ah, existe essa opção.”"
+      ],
       "tags": ["preexistencia", "cobertura", "carencia_24_meses", "orientacao"],
-      "sources": [
-        {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Orientação comercial/educativa; o agente deve manter linguagem transparente e evitar promessas."
-        }
-      ]
+      "links": [],
+      "source": { "type": "provided_text", "confidence": "medium", "notes": "Conteúdo orientativo; em caso de disputa, direcionar ao canal oficial." },
+      "agent_usage": { "when_to_use": "Quando o cliente relata doença preexistente e quer entender cobertura/prazos." }
     },
     {
       "id": "FAQ-E01",
-      "category": { "code": "E", "name": "“Plano familiar”" },
-      "title": "Existe plano familiar regulamentado?",
+      "category": "Plano familiar",
+      "title": "Existe plano familiar?",
       "question": "Existe plano familiar regulamentado?",
-      "answer": {
-        "short": "“Plano familiar” muitas vezes é termo de marketing; na prática entram empresarial (CNPJ) e coletivo por adesão.",
-        "details": [
-          "Sem CNPJ: alternativa indicada é coletivo por adesão.",
-          "Para simular: pedir profissão/atividade ocupacional principal."
-        ]
-      },
+      "answer_short": "“Plano familiar” muitas vezes é termo de marketing; na prática entram empresarial (CNPJ) e coletivo por adesão.",
+      "answer_details": [
+        "Sem CNPJ: alternativa indicada é coletivo por adesão.",
+        "Para simular: pedir profissão/atividade ocupacional principal."
+      ],
       "tags": ["plano_familiar", "adesao", "cnpj"],
-      "sources": [
-        {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Enquadramento comercial; pode depender de disponibilidade local e regras vigentes."
-        }
-      ]
+      "links": [],
+      "source": { "type": "provided_text", "confidence": "medium", "notes": "" },
+      "agent_usage": { "when_to_use": "Quando o cliente pede 'plano familiar' e você precisa enquadrar corretamente." }
     },
     {
       "id": "FAQ-F01",
-      "category": { "code": "F", "name": "Cancelamento (PI)" },
+      "category": "Cancelamento (PI)",
       "title": "Como cancelar o plano (passo a passo)",
       "question": "Como cancelar o plano da Humana Saúde no Piauí?",
-      "answer": {
-        "short": "Identificar tipo de contrato, contatar central e formalizar via canal digital ou carta; guardar protocolo.",
-        "details": [
-          "Etapas (como fornecido):",
-          "1) Verificar se é individual/familiar ou coletivo por adesão.",
-          "2) Ligar e informar que deseja cancelar.",
-          "3) Formalizar via canal digital ou carta escrita à mão.",
-          "4) Se carta: nome completo, CPF, nº do plano.",
-          "5) Se digital: preencher e anexar solicitação.",
-          "6) Aguardar confirmação (efeito imediato após recebimento) e guardar protocolo.",
-          "7) Checar pendências (mensalidades/coparticipações até a data).",
-          "Observações (como fornecido): cancelamento é irrevogável, efeito imediato após recebimento; não precisa justificar; pode haver exceção em tratamento contínuo."
-        ],
-        "official_reference_notes": [
-          "RN 412/2016 citada como base de orientação sobre cancelamento/exclusão (link não fornecido no texto)."
-        ]
-      },
+      "answer_short": "Identificar tipo de contrato, contatar central e formalizar via canal digital ou carta; guardar protocolo.",
+      "answer_details": [
+        "Etapas (conforme base):",
+        "1) Verificar se é individual/familiar ou coletivo por adesão.",
+        "2) Ligar e informar que deseja cancelar.",
+        "3) Formalizar via canal digital ou carta escrita à mão.",
+        "4) Se carta: nome completo, CPF, nº do plano.",
+        "5) Se digital: preencher e anexar solicitação.",
+        "6) Aguardar confirmação e guardar protocolo.",
+        "7) Checar pendências (mensalidades/coparticipações até a data).",
+        "Observações (base): cancelamento é irrevogável; efeito imediato após recebimento; não precisa justificar; pode haver exceção em tratamento contínuo."
+      ],
       "tags": ["cancelamento", "pi", "protocolo", "carta", "fale_conosco"],
-      "sources": [
+      "links": [
         {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Fluxo de cancelamento fornecido no material; ideal confirmar canais oficiais no site antes de orientar envio."
+          "label": "Orientações sobre cancelamento/exclusão (RN 412/2016) — navegar via site",
+          "url": "https://www.humanasaude.com.br/",
+          "official": true,
+          "notes": "A base menciona páginas; este link é o domínio principal para navegação."
         }
-      ]
+      ],
+      "source": { "type": "provided_text", "confidence": "medium", "notes": "Se o cliente pedir link exato da página, buscar/confirmar no site oficial." },
+      "agent_usage": { "when_to_use": "Quando o cliente quer cancelar e você já identificou o motivo; orientar passo a passo e canal." }
     },
     {
       "id": "FAQ-G01",
-      "category": { "code": "G", "name": "Autoatendimento" },
+      "category": "Autoatendimento",
       "title": "Onde acessar serviços do beneficiário",
       "question": "Onde encontro boletos, agendamento, declarações, rede de atendimento etc.?",
-      "answer": {
-        "short": "Na página “Beneficiários” da Humana Saúde Nordeste.",
-        "details": [
-          "Link informado: https://www.humanasaude.com.br/nordeste/beneficiarios.htm"
-        ],
-        "links": [
-          {
-            "label": "Beneficiários (Nordeste)",
-            "url": "https://www.humanasaude.com.br/nordeste/beneficiarios.htm"
-          }
-        ]
-      },
+      "answer_short": "Na página “Beneficiários” da Humana Saúde Nordeste.",
+      "answer_details": [],
       "tags": ["beneficiarios", "boletos", "agendamento", "declaracoes"],
-      "sources": [
+      "links": [
         {
-          "origin": "official_site",
-          "verified": false,
-          "checked_at": "2026-01-12",
+          "label": "Beneficiários — Humana Saúde Nordeste",
           "url": "https://www.humanasaude.com.br/nordeste/beneficiarios.htm",
-          "note": "Link fornecido como canal oficial."
+          "official": true,
+          "notes": ""
         }
-      ]
+      ],
+      "source": { "type": "official_link", "confidence": "high", "notes": "" },
+      "agent_usage": { "when_to_use": "Quando o cliente precisa de boleto, declarações ou serviços no portal." }
     },
     {
       "id": "FAQ-G02",
-      "category": { "code": "G", "name": "Autoatendimento" },
+      "category": "Autoatendimento",
       "title": "Onde acessar o Guia Médico",
       "question": "Onde encontro o Guia Médico?",
-      "answer": {
-        "short": "Na página “Guia Médico” (Nordeste).",
-        "details": [
-          "Link informado: https://www.humanasaude.com.br/nordeste/guia-medico.htm"
-        ],
-        "links": [
-          {
-            "label": "Guia Médico (Nordeste)",
-            "url": "https://www.humanasaude.com.br/nordeste/guia-medico.htm"
-          }
-        ]
-      },
+      "answer_short": "Na página “Guia Médico” (Nordeste).",
+      "answer_details": [],
       "tags": ["guia_medico", "rede_credenciada"],
-      "sources": [
+      "links": [
         {
-          "origin": "official_site",
-          "verified": false,
-          "checked_at": "2026-01-12",
+          "label": "Guia Médico — Humana Saúde Nordeste",
           "url": "https://www.humanasaude.com.br/nordeste/guia-medico.htm",
-          "note": "Link fornecido como canal oficial."
+          "official": true,
+          "notes": ""
         }
-      ]
+      ],
+      "source": { "type": "official_link", "confidence": "high", "notes": "" },
+      "agent_usage": { "when_to_use": "Quando o cliente quer achar clínicas/médicos/rede credenciada." }
     },
     {
       "id": "FAQ-G03",
-      "category": { "code": "G", "name": "Autoatendimento" },
-      "title": "Problemas de senha e app (contatos informados internamente)",
+      "category": "App / Senha",
+      "title": "Problemas de senha e app (contatos informados)",
       "question": "Como resolver problemas de senha/app?",
-      "answer": {
-        "short": "Há contatos informados para reset e suporte do app, não checados no site nesta base.",
-        "details": [
-          "E-mail: lojaapp@callcenterintegra.com.br",
-          "Reset: (86) 99991-8732 | (86) 98113-4448 | (86) 98116-9765",
-          "Nota RAG: marcar como origem=interno (não oficial no site) para o agente não “garantir” como oficial."
-        ],
-        "contacts": {
-          "email": ["lojaapp@callcenterintegra.com.br"],
-          "phones": ["+55 86 99991-8732", "+55 86 98113-4448", "+55 86 98116-9765"]
-        }
-      },
+      "answer_short": "Há contatos informados para reset/suporte do app; priorize sempre canal principal oficial.",
+      "answer_details": [
+        "Contatos informados na base (origem interna / não checados no site):",
+        "- E-mail: lojaapp@callcenterintegra.com.br",
+        "- Reset: (86) 99991-8732 | (86) 98113-4448 | (86) 98116-9765",
+        "Orientação de uso: sempre oferecer também o canal principal oficial e evitar afirmar que esses contatos são oficiais do site."
+      ],
       "tags": ["app", "senha", "reset", "suporte"],
-      "sources": [
-        {
-          "origin": "internal_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Contatos fornecidos internamente; não validados no site nesta checagem."
-        }
-      ]
+      "links": [],
+      "source": { "type": "internal_provided", "confidence": "low", "notes": "Marcado como interno/não oficial no site." },
+      "agent_usage": { "when_to_use": "Quando o cliente está travado no app/senha; use com cautela e com canal oficial junto." }
     },
     {
       "id": "FAQ-G04",
-      "category": { "code": "G", "name": "Autoatendimento" },
-      "title": "Erro de agendamento no app: como orientar",
+      "category": "App / Agendamento",
+      "title": "Erro no agendamento do app (orientação da base)",
       "question": "O app dá erro no agendamento. O que orientar?",
-      "answer": {
-        "short": "Formalizar por e-mail com dados + print + relato.",
-        "details": [
-          "Enviar para lojaapp@callcenterintegra.com.br com dados do beneficiário, relato do erro e prints.",
-          "Orientação vale para qualquer problema no app (conforme material fornecido)."
-        ],
-        "contacts": {
-          "email": ["lojaapp@callcenterintegra.com.br"]
-        }
-      },
+      "answer_short": "Formalizar por e-mail com dados + print + relato (conforme base).",
+      "answer_details": [
+        "Enviar para: lojaapp@callcenterintegra.com.br",
+        "Usar print do erro + dados do beneficiário + relato do que ocorreu.",
+        "Nota: contato indicado na base como origem interna; oferecer também canal oficial principal."
+      ],
       "tags": ["agendamento", "erro_app", "suporte_app"],
-      "sources": [
-        {
-          "origin": "internal_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Procedimento orientado no material interno; agente deve sugerir confirmação em canal oficial quando possível."
-        }
-      ]
+      "links": [],
+      "source": { "type": "internal_provided", "confidence": "low", "notes": "Orientação fornecida na base; não confirmada como oficial no site." },
+      "agent_usage": { "when_to_use": "Quando o app falha no agendamento; solicitar print e orientar formalização." }
     },
     {
       "id": "FAQ-H01",
-      "category": { "code": "H", "name": "Canais de atendimento" },
+      "category": "Canais de atendimento",
       "title": "Telefone/WhatsApp de atendimento",
       "question": "Qual é o número de atendimento da Humana Saúde?",
-      "answer": {
-        "short": "O material indica 4004-7901 como atendimento/WhatsApp e também menciona (86) 3221-1000 em alguns fluxos.",
-        "details": [
-          "Atendimento (informado como “novo número”): 4004-7901",
-          "Também aparecem comunicações e orientações citando (86) 3221-1000 para agendar/contato/WhatsApp em alguns fluxos.",
-          "Recomendação RAG: priorizar 4004-7901 como “principal” e citar 3221-1000 como “usado em alguns serviços/fluxos”, quando necessário."
-        ],
-        "contacts": {
-          "phones": ["4004-7901", "+55 86 3221-1000"]
-        }
-      },
+      "answer_short": "Priorize 4004-7901 como principal; 3221-1000 aparece em alguns fluxos/serviços.",
+      "answer_details": [
+        "Canal principal (conteúdo oficial recente, conforme base): 4004-7901 (atendimento e WhatsApp).",
+        "Também aparece (em alguns fluxos/serviços no site/comunicações): (86) 3221-1000.",
+        "Recomendação de uso: citar 4004-7901 como principal; citar 3221-1000 apenas quando necessário para um fluxo específico."
+      ],
       "tags": ["atendimento", "whatsapp", "telefone", "canais"],
-      "sources": [
-        {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Números informados no material; recomendado validar em canal oficial antes de afirmar como 'atual'."
-        }
-      ]
+      "links": [],
+      "source": { "type": "provided_text", "confidence": "medium", "notes": "Se precisar afirmar 'novo número' com 100% de certeza, confirmar no site." },
+      "agent_usage": { "when_to_use": "Quando o cliente pede canal oficial; sempre priorizar 4004-7901." }
     },
     {
       "id": "FAQ-H02",
-      "category": { "code": "H", "name": "Canais de atendimento" },
-      "title": "Onde encontrar Fale Conosco e Ouvidoria",
+      "category": "Canais de atendimento",
+      "title": "Onde achar Fale Conosco / Ouvidoria",
       "question": "Onde encontro “Fale com a Humana”, “Fale Conosco” e Ouvidoria?",
-      "answer": {
-        "short": "No menu de atendimento do site Nordeste."
-      },
+      "answer_short": "No menu de atendimento do site Nordeste.",
+      "answer_details": [],
       "tags": ["fale_conosco", "ouvidoria", "atendimento_site"],
-      "sources": [
+      "links": [
         {
-          "origin": "official_site",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Localização descrita (menu do site); sem URL específica fornecida no texto."
+          "label": "Site Humana Saúde Nordeste (navegar para Fale Conosco/Ouvidoria)",
+          "url": "https://www.humanasaude.com.br/nordeste/",
+          "official": true,
+          "notes": "A base cita navegação; usar o site para localizar o menu."
         }
-      ]
+      ],
+      "source": { "type": "official_link", "confidence": "medium", "notes": "Link raiz para navegação; páginas específicas podem mudar." },
+      "agent_usage": { "when_to_use": "Quando o cliente quer formulário/canais digitais e ouvidoria." }
     },
     {
       "id": "FAQ-I01",
-      "category": { "code": "I", "name": "Renegociação de dívidas" },
-      "title": "Contatos para renegociação (informados internamente)",
+      "category": "Renegociação",
+      "title": "Renegociação de dívidas (contatos informados)",
       "question": "Quais contatos para renegociação?",
-      "answer": {
-        "short": "Você listou Meet Call, Norton Nunes e Executiva Recuperação (mantido como fornecido).",
-        "details": [
-          "Nota RAG: marcar origem=interno (não validado no site nesta checagem)."
-        ]
-      },
+      "answer_short": "A base lista contatos específicos para renegociação; tratar como informação interna e priorizar canal oficial quando possível.",
+      "answer_details": [
+        "Contatos listados na base (origem interna / não validado no site nesta checagem):",
+        "- Meet Call",
+        "- Norton Nunes",
+        "- Executiva Recuperação",
+        "Nota: oferecer canal oficial principal junto e evitar afirmar como único meio."
+      ],
       "tags": ["renegociacao", "dividas"],
-      "sources": [
-        {
-          "origin": "internal_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Entidades citadas sem contatos detalhados no texto; manter como referência interna."
-        }
-      ]
+      "links": [],
+      "source": { "type": "internal_provided", "confidence": "low", "notes": "Sem validação no site na checagem da base." },
+      "agent_usage": { "when_to_use": "Quando o cliente pede renegociação; usar com cautela." }
     },
     {
       "id": "FAQ-J01",
-      "category": { "code": "J", "name": "Oftalmologia (Medplan)" },
-      "title": "Atendimento oftalmológico (Medplan)",
+      "category": "Oftalmologia (Medplan)",
+      "title": "Atendimento oftalmológico (linha Medplan)",
       "question": "Onde é o atendimento oftalmológico para linha Medplan (Infinity, Gold, Vital)?",
-      "answer": {
-        "short": "O material informa Hospital H Visão (Centro Sul e Dirceu) e Hospital Da Visão Dr. Thiago Castro Ramalho (telefone).",
-        "details": [
-          "Hospital H Visão (Centro Sul e Dirceu)",
-          "Hospital Da Visão Dr. Thiago Castro Ramalho (telefone não detalhado no texto fornecido)"
-        ]
-      },
+      "answer_short": "A base informa unidades específicas para atendimento oftalmológico; confirmar no Guia Médico quando possível.",
+      "answer_details": [
+        "Informações fornecidas na base:",
+        "- Hospital H Visão (Centro Sul e Dirceu)",
+        "- Hospital Da Visão Dr. Thiago Castro Ramalho (telefone informado na base)",
+        "Recomendação: confirmar no Guia Médico (link oficial) para evitar divergência de rede."
+      ],
       "tags": ["oftalmo", "medplan", "teresina"],
-      "sources": [
+      "links": [
         {
-          "origin": "user_provided_unverified",
-          "verified": false,
-          "checked_at": "2026-01-12",
-          "url": null,
-          "note": "Locais citados sem links/telefones completos no trecho; recomendado validar no Guia Médico."
+          "label": "Guia Médico — Humana Saúde Nordeste",
+          "url": "https://www.humanasaude.com.br/nordeste/guia-medico.htm",
+          "official": true,
+          "notes": "Usar para confirmar rede ativa e endereços."
         }
-      ]
+      ],
+      "source": { "type": "provided_text", "confidence": "medium", "notes": "A base traz nomes; o Guia Médico é a confirmação mais segura." },
+      "agent_usage": { "when_to_use": "Quando o cliente pede oftalmo; direcionar para confirmação via Guia Médico." }
     }
-  ]
+  ],
+  "tag_index_hint": {
+    "plano": ["plano_pf", "plano_pj", "plano_familiar", "adesao", "mei"],
+    "financeiro": ["reajuste", "ans", "coparticipacao", "boletos", "renegociacao"],
+    "operacional": ["beneficiarios", "guia_medico", "app", "senha", "cancelamento", "fale_conosco", "ouvidoria"],
+    "especialidades": ["oftalmo", "medplan"]
+  }
 }
